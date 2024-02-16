@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Бүртгүүлэх</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
+	</head>
+	<body>
+		<main>
+			<form id="sign-up-form" class="auth-form" novalidate>
+				<h1 class="title">Хас Банкны Ажилтан</h1>
+
+				<p class="link">Бүртгэлтэй юу? <a href="./sign-in.html">Нэвтрэх</a></p>
+
+				<div class="form-row">
+					<div id="email-wrapper" class="input-wrapper">
+						<div class="input-inner">
+							<label for="email" class="icon">
+								<i class="fa-solid fa-envelope"></i>
+							</label>
+							<input class="input" type="email" id="email" name="email" placeholder="Э-Шуудан" />
+						</div>
+
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div id="password-wrapper" class="input-wrapper">
+						<div class="input-inner">
+							<label for="password" class="icon">
+								<i class="fa-solid fa-lock"></i>
+							</label>
+							<input
+								class="input"
+								type="password"
+								id="password"
+								name="password"
+								placeholder="Нууц үг"
+							/>
+						</div>
+
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div id="passwordConfirmation-wrapper" class="input-wrapper">
+						<div class="input-inner">
+							<label for="passwordConfirmation" class="icon">
+								<i class="fa-solid fa-lock"></i>
+							</label>
+							<input
+								id="passwordConfirmation"
+								name="passwordConfirmation"
+								class="input"
+								type="password"
+								placeholder="Нууц үг дахин оруулах"
+							/>
+						</div>
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row col-2">
+					<div id="firstName-wrapper" class="input-wrapper">
+						<div class="input-inner">
+							<label for="firstName" class="icon">
+								<i class="fa-solid fa-user"></i>
+							</label>
+							<input
+								id="firstName"
+								name="firstName"
+								class="input"
+								type="text"
+								placeholder="Өөрийн нэр"
+							/>
+						</div>
+						<span class="input-error">Validation error</span>
+					</div>
+
+					<div id="lastName-wrapper" class="input-wrapper">
+						<div class="input-inner">
+							<label for="lastName" class="icon">
+								<i class="fa-solid fa-user"></i>
+							</label>
+							<input id="lastName" name="lastName" class="input" type="text" placeholder="Овог" />
+						</div>
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div id="gender-wrapper" class="input-wrapper">
+						<div class="radio-btns">
+							<div class="radio-wrapper">
+								<input type="radio" name="gender" id="male" value="male" />
+								<label for="male">Эр</label>
+							</div>
+							<div class="radio-wrapper">
+								<input type="radio" name="gender" id="female" value="female" />
+								<label for="female">Эм</label>
+							</div>
+						</div>
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div id="section-wrapper" class="input-wrapper">
+						<select name="section" id="section" class="dropdown">
+							<option value="">--Хэлтэс сонгох--</option>
+						</select>
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div id="terms-wrapper" class="input-wrapper">
+						<div class="checkbox-wrapper">
+							<input type="checkbox" name="terms" id="terms" />
+							<label for="terms">Зөвшөөрч байна</label>
+						</div>
+
+						<span class="input-error">Validation error</span>
+					</div>
+				</div>
+
+				<button class="form-btn" type="submit">
+					<span>Бүртгүүлэх</span>
+					<i class="fa-solid fa-spinner"></i>
+				</button>
+			</form>
+		</main>
+		<footer>
+			<p class="copyright">Developed by <span>Жавхлант</span></p>
+		</footer>
+
+		<div class="toasts">
+			<div class="toast-notification toast-hide">
+				<div class="toast-content">
+					<div class="toast-icon">
+						<i class="fa-solid"></i>
+					</div>
+					<div class="toast-msg"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+		crossorigin="anonymous"
+	></script>
+	<script src="./assets/js/utils/error.js"></script>
+	<script src="./assets/js/utils/toast.js"></script>
+	<script src="./assets/js/redirect.js"></script>
+	<script src="./assets/js/sign-up.js"></script>
+</html>

@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px) {
+	.auth-form {
+		width: 100%;
+		margin: 0 20px;
+	}
+
+	.auth-form .form-row.col-2 {
+		flex-wrap: wrap;
+	}
+
+	.form-row.col-2 > * {
+		width: 100%;
+	}
+}
